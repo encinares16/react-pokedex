@@ -1,0 +1,41 @@
+/* .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+
+}
+
+.nav .links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    color: black;
+}
+
+.links a.active{
+    background-color: rgb(99, 99, 99);
+}
+
+@media only screen and (max-width: 380px) {
+    .nav .links a{
+        gap: .15rem;
+        height: 1.3rem;
+        width: 1.3rem;
+    }
+}
